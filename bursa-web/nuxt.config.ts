@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { resolve } from "path";
 export default defineNuxtConfig({
   ssr: true,
   routeRules: {
@@ -19,6 +18,16 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      script: [
+        {
+          type: "module",
+          src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        },
+        {
+          type: "nomodule",
+          src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        }
+      ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/icon.png' }
       ]

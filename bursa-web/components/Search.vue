@@ -24,20 +24,7 @@
 
 <script setup lang="ts">
 import "@capitec/omni-components/search-field";
-const items = [
-  {
-    name: "Item 1",
-    id: 1,
-  },
-  {
-    name: "Item 2",
-    id: 2,
-  },
-  {
-    name: "Item 3",
-    id: 3,
-  },
-];
+const items = [];
 </script>
 
 <style scoped></style>
