@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  bursa-api:
+  bursaAPI:
     image: ${DOCKER_REGISTRY-}bursaapi
     build:
       context: .
-      dockerfile: bursa-api/Dockerfile
+      dockerfile: bursaAPI/Dockerfile

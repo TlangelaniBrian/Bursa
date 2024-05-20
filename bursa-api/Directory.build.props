@@ -7,10 +7,6 @@
 	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
   <ItemGroup>
-  <PackageReference 
-  Include="SonarAnalyer.CSharp" 
-  Version="9.24.0.89429" 
-  PrivateAssets="all"
-  Condition="'$(MSBuildProjectExtension)' == '.csproj'" />
+ 
   </ItemGroup>
 </Project>

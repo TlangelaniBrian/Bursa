@@ -9,18 +9,18 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["bursa-api/bursa-api.csproj", "bursa-api/"]
-COPY ["bursa-dal/bursa-dal.csproj", "bursa-dal/"]
-RUN dotnet restore "./bursa-api/bursa-api.csproj"
+COPY ["bursaAPI/bursaAPI.csproj", "bursaAPI/"]
+COPY ["bursaDAL/bursaDAL.csproj", "bursaDAL/"]
+RUN dotnet restore "./bursaAPI/bursaAPI.csproj"
 COPY . .
-WORKDIR "/src/bursa-api"
-RUN dotnet build "./bursa-api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/bursaAPI"
+RUN dotnet build "./bursaAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./bursa-api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./bursaAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "bursa-api.dll"]
+ENTRYPOINT ["dotnet", "bursaAPI.dll"]

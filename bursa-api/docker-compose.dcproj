@@ -7,7 +7,7 @@
     <ProjectGuid>17cfa053-8276-402c-8873-a07490c09c0a</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>bursa-api</DockerServiceName>
+    <DockerServiceName>bursaAPI</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

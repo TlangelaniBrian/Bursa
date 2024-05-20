@@ -1,4 +1,4 @@
-namespace bursa_api
+namespace bursaAPI.Modals
 {
     public class WeatherForecast
     {
