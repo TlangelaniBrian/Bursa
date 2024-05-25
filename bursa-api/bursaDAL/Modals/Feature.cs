@@ -1,4 +1,7 @@
-﻿namespace bursaDAL.Modals
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace bursaDAL.Modals
 {
     public readonly record struct FeatureId(Guid Value)
     {
@@ -8,8 +11,13 @@
     }
     public class Feature
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public FeatureId Id { get; set; } = FeatureId.Empty;
+
+        [MaxLength(300)]
         public required string Name { get; set; }
+
+        [MaxLength(300)]
         public required string Access { get; set; }
         public bool IsActive { get; set; }
     }

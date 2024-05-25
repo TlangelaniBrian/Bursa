@@ -14,11 +14,11 @@ namespace bursaAPI.Middleware
         [JsonPropertyOrder(2)]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? Message { get; set; }
-        
+
         [JsonPropertyName("result")]
         [JsonPropertyOrder(3)]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        
+
         public object? Result { get; set; } = null;
         [JsonPropertyName("source")]
         [JsonPropertyOrder(4)]

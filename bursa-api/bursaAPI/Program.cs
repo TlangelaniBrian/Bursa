@@ -16,12 +16,12 @@ builder.Host.UseSerilog((context, loggerConfig) => loggerConfig.ReadFrom.Configu
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v0.0.1", new() { Title = "bursa", Version = "0.0.1" }); 
+    c.SwaggerDoc("v0.0.1", new() { Title = "bursa", Version = "0.0.1" });
 });
 builder.Services.AddScoped<IBursaService, BursaService>();
 builder.Services.AddEndpointsApiExplorer();
 
- 
+
 var app = builder.Build();
 app.UseSerilogRequestLogging();
 // Configure the HTTP request pipeline.

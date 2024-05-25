@@ -26,7 +26,7 @@ namespace bursaAPI.Repository
         #region------ Update Methods ------
 
         public Task<int> UpdateStudent(Student student);
-        
+
         #endregion
 
     }

@@ -11,7 +11,7 @@ namespace bursaDAL.Configurations
             {
                 ArgumentNullException.ThrowIfNull(app);
             }
-            
+
             using var scope = app.ApplicationServices.CreateScope();
             using var context = scope.ServiceProvider.GetRequiredService<BursaContext>();
             return app;

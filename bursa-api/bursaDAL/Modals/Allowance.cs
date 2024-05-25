@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static bursaDAL.Classes.Constants;
 using System.ComponentModel.DataAnnotations.Schema;
+using static bursaDAL.Classes.Constants;
 
 namespace bursaDAL.Modals
 {
@@ -13,7 +13,7 @@ namespace bursaDAL.Modals
 
     public class Allowance
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public AllowanceId Id { get; set; } = AllowanceId.Empty;
         public bool IsActive { get; set; }
 
@@ -21,8 +21,9 @@ namespace bursaDAL.Modals
         public decimal Amount { get; set; }
         public int TotalNumberPayments { get; set; }
         public int TotalNumberPaymentsMade { get; set; }
-        public DateTime StartTimestamp { get; set; }
+        public DateTime StartTimestamp { get; set; } = DateTime.Now;
         public DateTime EndTimestamp { get; set; }
+        [MaxLength(300)]
         public string? Name { get; set; }
         public PaymentCycle PaymentCycle { get; set; }
         [Display(Name = "AllowanceType")]

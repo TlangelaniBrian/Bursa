@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace bursaDAL.Modals
 {
@@ -11,7 +11,7 @@ namespace bursaDAL.Modals
     }
     public class User
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public UserId Id { get; set; } = UserId.Empty;
         [Display(Name = "Role")]
         public RoleId RoleId { get; set; } = RoleId.Empty;
@@ -22,16 +22,22 @@ namespace bursaDAL.Modals
         [MaxLength(50)]
         [Display(Name = "ID Number")]
         public required string IdNumber { get; set; }
+        [MaxLength(100)]
         public string? PersonnelId { get; set; }
         public bool IsActive { get; set; }
+        [MaxLength(300)]
         public required string Name { get; set; }
+        [MaxLength(300)]
         public required string Surname { get; set; }
+        [MaxLength(30)]
         public required string PhoneNumber { get; set; }
+        [MaxLength(150)]
+        [EmailAddress]
         public string Email { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }
-        public string? HashIDNumber { get; set; }
-        public string? SaltIDNumber { get; set; }
-
-
+        [MaxLength(500)]
+        public string? HashIdNumber { get; set; }
+        [MaxLength(500)]
+        public string? SaltIdNumber { get; set; }
     }
 }

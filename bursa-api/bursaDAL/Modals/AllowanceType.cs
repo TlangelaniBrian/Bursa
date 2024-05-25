@@ -1,4 +1,7 @@
-﻿namespace bursaDAL.Modals
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace bursaDAL.Modals
 {
     public readonly record struct AllowanceTypeId(Guid Value)
     {
@@ -8,7 +11,10 @@
     }
     public class AllowanceType
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public AllowanceTypeId Id { get; set; } = AllowanceTypeId.Empty;
+
+        [MaxLength(300)]
         public required string Name { get; set; }
     }
 }

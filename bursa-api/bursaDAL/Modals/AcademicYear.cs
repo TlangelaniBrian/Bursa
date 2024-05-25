@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using static bursaDAL.Classes.Constants;
 
 namespace bursaDAL.Modals
@@ -12,6 +12,7 @@ namespace bursaDAL.Modals
     }
     public class AcademicYear
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public AcademicYearId Id { get; set; } = AcademicYearId.Empty;
         public AcademicPeriod Period { get; set; }
         public int Year { get; set; }
@@ -19,5 +20,6 @@ namespace bursaDAL.Modals
         public InstitutionId InstitutionId { get; set; }
         [ForeignKey("InstitutionId")]
         public virtual Institution? Institution { get; set; }
+        public DateTime CreatedTimestamp { get; set; } = DateTime.Now;
     }
 }

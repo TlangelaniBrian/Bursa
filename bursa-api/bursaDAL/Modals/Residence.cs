@@ -1,6 +1,6 @@
-﻿using static bursaDAL.Classes.Constants;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using static bursaDAL.Classes.Constants;
 
 namespace bursaDAL.Modals
 {
@@ -13,26 +13,31 @@ namespace bursaDAL.Modals
     }
     public class Residence
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public ResidenceId Id { get; set; } = ResidenceId.Empty;
-        public UserId UserId { get; set; } = UserId.Empty;
-        public UserId UpdatedBy { get; set; } = UserId.Empty;
-        public LivingArrangment LivingArrangment { get; set; }
+        [Display(Name = "Resident")]
+        public UserId ResidentId { get; set; } = UserId.Empty;
+        [ForeignKey("ResidentId")]
+        public virtual User? Resident { get; set; }
+        public LivingArrangement LivingArrangement { get; set; }
         public Uri? LeaseUrl { get; set; }
+        [MaxLength(300)]
         public string Address { get; set; } = string.Empty;
         public bool IsActive { get; set; }
-        public VarificationStatus ResidenceVarificationStatus { get; set; }
-        public DateTime CreateTimestamp { get; set; }
-        public DateTime UpdatedTimestamp { get; set; }
+        public VerificationStatus ResidenceVerificationStatus { get; set; }
+        public DateTime CreateTimestamp { get; set; } = DateTime.Now;
+        public DateTime UpdatedTimestamp { get; set; } = DateTime.Now;
         public bool? IsAccredited { get; set; }
+        [MaxLength(300)]
         public string? LandLordName { get; set; }
+        [MaxLength(30)]
         public string? LandLordPhone { get; set; }
+        [MaxLength(150)]
+        [EmailAddress]
         public string? LandLordEmail { get; set; }
-        public DateTime EndTimestamp { get; set; }
-        public DateTime StartTimestamp { get; set; }
+        public DateTime EndTimestamp { get; set; } = DateTime.UtcNow;
+        public DateTime StartTimestamp { get; set; } = DateTime.UtcNow;
         [Column(TypeName = "decimal(18, 2)")]
         public decimal TotalCost { get; set; }
-
-
     }
 }

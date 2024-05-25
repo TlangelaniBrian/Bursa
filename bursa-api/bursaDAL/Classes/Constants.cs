@@ -6,43 +6,43 @@ namespace bursaDAL.Classes
 {
     public static class Constants
     {
-        private static readonly AcademicYearId januaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("b24b536901c247c8999c38d861721bdd");
-        private static readonly AcademicYearId februaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("13dce65be2a54abeb62c7799ba88402e");
+        private static readonly AcademicYearId JanuaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("b24b536901c247c8999c38d861721bdd");
+        private static readonly AcademicYearId FebruaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("13dce65be2a54abeb62c7799ba88402e");
 
-        private static readonly AllowanceId travelAllowanceId = AllowanceId.ParseAllowanceId("2aa8bf15e2c4499c90977c5f196f2641");
-        private static readonly AllowanceId foodAllowanceId = AllowanceId.ParseAllowanceId("c803c4d5abe745ef83f5235cea13deb5");
-        private static readonly AllowanceId bookAllowanceId = AllowanceId.ParseAllowanceId("dc3d722aa9fb42d18b6b38052fb4db53");
-        private static readonly AllowanceId residenceAllowanceId = AllowanceId.ParseAllowanceId("39a725c3160547f98554e376da69e1b3");
+        private static readonly AllowanceId TravelAllowanceId = AllowanceId.ParseAllowanceId("2aa8bf15e2c4499c90977c5f196f2641");
+        private static readonly AllowanceId FoodAllowanceId = AllowanceId.ParseAllowanceId("c803c4d5abe745ef83f5235cea13deb5");
+        private static readonly AllowanceId BookAllowanceId = AllowanceId.ParseAllowanceId("dc3d722aa9fb42d18b6b38052fb4db53");
+        private static readonly AllowanceId ResidenceAllowanceId = AllowanceId.ParseAllowanceId("39a725c3160547f98554e376da69e1b3");
 
-        private static readonly AllowanceTypeId travelAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("a5aa0a8e6988486a9975ca16d99b4149");
-        private static readonly AllowanceTypeId foodAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("c445390fe8294d569bd7d51de39dd718");
-        private static readonly AllowanceTypeId bookAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("22180315f1074737983a99f8eb2a48a9");
-        private static readonly AllowanceTypeId residenceAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("9ab195d303734284a341f094ad2bff94");
+        private static readonly AllowanceTypeId TravelAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("a5aa0a8e6988486a9975ca16d99b4149");
+        private static readonly AllowanceTypeId FoodAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("c445390fe8294d569bd7d51de39dd718");
+        private static readonly AllowanceTypeId BookAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("22180315f1074737983a99f8eb2a48a9");
+        private static readonly AllowanceTypeId ResidenceAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("9ab195d303734284a341f094ad2bff94");
 
-        private static readonly BursaryId nsfasBursaryId = BursaryId.ParseBursaryId("b1da32d9858b4e429470d04cab92940f");
-        private static readonly BursaryOfficerId nsfasHomeBursaryOfficerId = BursaryOfficerId.ParseBursaryOfficerId("29d86a7df1934132aaa7ff9a2780da7a");
-        private static readonly PocketId nsfasStudentPocketId = PocketId.ParsePocketId("4039a933d5ad4d21af2d7657e6ba7a84");
-        private static readonly PaymentId paymentId = PaymentId.ParsePaymentId("be049cdd8eba40b3a465dadd1fc70bf6");
-        private static readonly InstitutionId institutionId = InstitutionId.ParseInstitutionId("0d018d4b9b97437d8f33f47ebbdd0aa3");
-        private static readonly FinancingInstitutionId financingInstitutionId = FinancingInstitutionId.ParseFinancingInstitutionId("4b53bd2d0e834117927403197a7f2473");
-        
-        private static readonly FeatureId superAdminFeatureId = FeatureId.ParseFeatureId("8d22686a2b92481a9e21064211b7c949");
-        private static readonly FeatureId userFeatureId = FeatureId.ParseFeatureId("211eb55a13bf4f848f8ebcbf9ce6564a");
+        private static readonly BursaryId NsfasBursaryId = BursaryId.ParseBursaryId("b1da32d9858b4e429470d04cab92940f");
+        private static readonly BursaryOfficerId NsfasHomeBursaryOfficerId = BursaryOfficerId.ParseBursaryOfficerId("29d86a7df1934132aaa7ff9a2780da7a");
+        private static readonly PocketId NsfasStudentPocketId = PocketId.ParsePocketId("6909a8f758d344308cedb57628c46235");
+        private static readonly PaymentId PaymentId = PaymentId.ParsePaymentId("be049cdd8eba40b3a465dadd1fc70bf6");
+        private static readonly InstitutionId InstitutionId = InstitutionId.ParseInstitutionId("0d018d4b9b97437d8f33f47ebbdd0aa3");
+        private static readonly FinancingInstitutionId FinancingInstitutionId = FinancingInstitutionId.ParseFinancingInstitutionId("4b53bd2d0e834117927403197a7f2473");
+        private static readonly ResidenceId ResidenceId = ResidenceId.ParseResidenceId("f4e13f228fc44dc8a598ccc6c8b3377c");
+        private static readonly FeatureId SuperAdminFeatureId = FeatureId.ParseFeatureId("8d22686a2b92481a9e21064211b7c949");
+        private static readonly FeatureId UserFeatureId = FeatureId.ParseFeatureId("211eb55a13bf4f848f8ebcbf9ce6564a");
         private static readonly FeatureId BursaryFeatureId = FeatureId.ParseFeatureId("3d27613b37ac49e3b143dbe193975974");
-        private static readonly FeatureId allowanceFeatureId = FeatureId.ParseFeatureId("65fa4c90600a4cb6996160fe359c71b4");
-        private static readonly FeatureId residencyFeatureId = FeatureId.ParseFeatureId("6b7eb258cdf140c7a4577fd93abcdd56");
+        private static readonly FeatureId AllowanceFeatureId = FeatureId.ParseFeatureId("65fa4c90600a4cb6996160fe359c71b4");
+        private static readonly FeatureId ResidencyFeatureId = FeatureId.ParseFeatureId("6b7eb258cdf140c7a4577fd93abcdd56");
 
-        private static readonly UserId superAdminUserId = UserId.ParseUserId("5d76cbcfb3de426db105faa16b8536a4");
-        private static readonly UserId adminUserId = UserId.ParseUserId("e9446c7d8328490d8a1f3c180bb95cfd");
-        private static readonly UserId officerUserId = UserId.ParseUserId("35996b95cce14bf088c8a26a99032e30");
-        private static readonly UserId studentUserId = UserId.ParseUserId("122716c8522b4d6eaf9204dd7208b862");
+        private static readonly UserId SuperAdminUserId = UserId.ParseUserId("5d76cbcfb3de426db105faa16b8536a4");
+        private static readonly UserId AdminUserId = UserId.ParseUserId("e9446c7d8328490d8a1f3c180bb95cfd");
+        private static readonly UserId OfficerUserId = UserId.ParseUserId("35996b95cce14bf088c8a26a99032e30");
+        private static readonly UserId StudentUserId = UserId.ParseUserId("122716c8522b4d6eaf9204dd7208b862");
 
-        private static readonly RoleId superAdminRoleId = RoleId.ParseRoleId("dd7ee8cf9075403a82dd67100a57115e");
-        private static readonly RoleId adminRoleId = RoleId.ParseRoleId("7a3a9989fa574186ae1efeb53d641d17");
-        private static readonly RoleId officerRoleId = RoleId.ParseRoleId("a8b05ec09a824b7a9d419829b16e2cf0");
-        private static readonly RoleId studentRoleId = RoleId.ParseRoleId("6620edbed4da4b5280689fc35abd0fee");
+        private static readonly RoleId SuperAdminRoleId = RoleId.ParseRoleId("dd7ee8cf9075403a82dd67100a57115e");
+        private static readonly RoleId AdminRoleId = RoleId.ParseRoleId("7a3a9989fa574186ae1efeb53d641d17");
+        private static readonly RoleId OfficerRoleId = RoleId.ParseRoleId("a8b05ec09a824b7a9d419829b16e2cf0");
+        private static readonly RoleId StudentRoleId = RoleId.ParseRoleId("6620edbed4da4b5280689fc35abd0fee");
 
-        public enum VarificationStatus
+        public enum VerificationStatus
         {
             Pending = 0,
             Approved = 1,
@@ -70,7 +70,7 @@ namespace bursaDAL.Classes
             Capped = 2,
             Partial = 3
         }
-        public enum LivingArrangment
+        public enum LivingArrangement
         {
             Home = 0,
             PrivateResidence = 1,
@@ -84,39 +84,46 @@ namespace bursaDAL.Classes
             Rejected = 2,
             Cancelled = 3
         }
-
+        public enum InstitutionCategory
+        {
+            Other = 0,
+            Corporate = 1,
+            Family = 2,
+            Government = 3,
+            Individual = 4
+        }
         internal static class AcademicYearData
         {
-            public static ReadOnlyCollection<AcademicYear> AcademicYearList { get; } = new ReadOnlyCollection<AcademicYear>(
+            public static ReadOnlyCollection<AcademicYear> AcademicYearList { get; } = new(
             [
                 new AcademicYear
                 {
-                    Id = januaryToDecemberYearId,
+                    Id = JanuaryToDecemberYearId,
                     Period = AcademicPeriod.JanuaryToDecember,
                     Year = 2024,
-                    InstitutionId = institutionId,
+                    InstitutionId = InstitutionId,
                 },
                 new AcademicYear
                 {
-                    Id = februaryToDecemberYearId,
+                    Id = FebruaryToDecemberYearId,
                     Period = AcademicPeriod.FebruaryToDecember,
                     Year = 2024,
-                    InstitutionId = institutionId,
+                    InstitutionId = InstitutionId,
                 }
             ]
             );
         }
         internal static class AllowanceData
         {
-            public static ReadOnlyCollection<Allowance> AllowanceList { get; } = new ReadOnlyCollection<Allowance>(
+            public static ReadOnlyCollection<Allowance> AllowanceList { get; } = new(
             [
                 new Allowance
                 {
-                    Id = travelAllowanceId,
-                    AllowanceTypeId = travelAllowanceTypeId,
-                    Name = AllowanceTypeData.travelAllowance,
+                    Id = TravelAllowanceId,
+                    AllowanceTypeId = TravelAllowanceTypeId,
+                    Name = AllowanceTypeData.TravelAllowance,
                     Amount = 12000.00m,
-                    BursaryId = nsfasBursaryId,
+                    BursaryId = NsfasBursaryId,
                     IsActive = true,
                     PaymentCycle = PaymentCycle.Monthly,
                     TotalNumberPayments = 10,
@@ -126,11 +133,11 @@ namespace bursaDAL.Classes
                 },
                 new Allowance
                 {
-                    Id = foodAllowanceId,
-                    Name = AllowanceTypeData.foodAllowance,
-                    AllowanceTypeId = foodAllowanceTypeId,
+                    Id = FoodAllowanceId,
+                    Name = AllowanceTypeData.FoodAllowance,
+                    AllowanceTypeId = FoodAllowanceTypeId,
                     Amount = 13000.00m,
-                    BursaryId = nsfasBursaryId,
+                    BursaryId = NsfasBursaryId,
                     IsActive = true,
                     PaymentCycle = PaymentCycle.Monthly,
                     TotalNumberPayments = 12,
@@ -140,11 +147,11 @@ namespace bursaDAL.Classes
                 },
                 new Allowance
                 {
-                    Id = bookAllowanceId,
-                    Name = AllowanceTypeData.bookAllowance,
-                    AllowanceTypeId = bookAllowanceTypeId,
+                    Id = BookAllowanceId,
+                    Name = AllowanceTypeData.BookAllowance,
+                    AllowanceTypeId = BookAllowanceTypeId,
                     Amount = 5000.00m,
-                    BursaryId = nsfasBursaryId,
+                    BursaryId = NsfasBursaryId,
                     IsActive = true,
                     PaymentCycle = PaymentCycle.BiAnnually,
                     TotalNumberPayments = 2,
@@ -154,11 +161,11 @@ namespace bursaDAL.Classes
                 },
                 new Allowance
                 {
-                    Id = residenceAllowanceId,
-                    Name = AllowanceTypeData.residenceAllowance,
-                    AllowanceTypeId = residenceAllowanceTypeId,
+                    Id = ResidenceAllowanceId,
+                    Name = AllowanceTypeData.ResidenceAllowance,
+                    AllowanceTypeId = ResidenceAllowanceTypeId,
                     Amount = 45000.00m,
-                    BursaryId = nsfasBursaryId,
+                    BursaryId = NsfasBursaryId,
                     IsActive = true,
                     PaymentCycle = PaymentCycle.Monthly,
                     TotalNumberPayments = 12,
@@ -170,144 +177,144 @@ namespace bursaDAL.Classes
         }
         internal static class AllowanceTypeData
         {
-            public const string travelAllowance = "Travel Allowance";
-            public const string foodAllowance = "Food Allowance";
-            public const string bookAllowance = "Book Allowance";
-            public const string residenceAllowance = "Residence Allowance";
+            public const string TravelAllowance = "Travel Allowance";
+            public const string FoodAllowance = "Food Allowance";
+            public const string BookAllowance = "Book Allowance";
+            public const string ResidenceAllowance = "Residence Allowance";
 
-            public static ReadOnlyCollection<AllowanceType> AllowanceTypeList { get; } = new ReadOnlyCollection<AllowanceType>(
+            public static ReadOnlyCollection<AllowanceType> AllowanceTypeList { get; } = new(
             [
                 new AllowanceType
                 {
-                    Id = travelAllowanceTypeId,
-                    Name = travelAllowance
+                    Id = TravelAllowanceTypeId,
+                    Name = TravelAllowance
                 },
                 new AllowanceType
                 {
-                    Id = foodAllowanceTypeId,
-                    Name = foodAllowance
+                    Id = FoodAllowanceTypeId,
+                    Name = FoodAllowance
                 },
                 new AllowanceType
                 {
-                    Id = bookAllowanceTypeId,
-                    Name = bookAllowance
+                    Id = BookAllowanceTypeId,
+                    Name = BookAllowance
                 },
                 new AllowanceType
                 {
-                    Id = residenceAllowanceTypeId,
-                    Name = residenceAllowance
+                    Id = ResidenceAllowanceTypeId,
+                    Name = ResidenceAllowance
                 }
             ]);
         }
         internal static class BursaryData
         {
-            public static ReadOnlyCollection<Bursary> BursaryList { get; } = new ReadOnlyCollection<Bursary>(
+            public static ReadOnlyCollection<Bursary> BursaryList { get; } = new(
                [
                 new Bursary
                 {
-                    Id = nsfasBursaryId,
+                    Id = NsfasBursaryId,
                     Name = "NSFAS - PrivateResidence",
                     TotalAmount = 75000,
                     IsActive = true,
                     Type = BursaryType.FullCost,
                     CreateTimestamp = DateTime.ParseExact("2024-01-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     UpdatedTimestamp = DateTime.ParseExact("2024-02-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
-                    StatusCode = VarificationStatus.Approved,
-                    FinancingInstitutionId = financingInstitutionId,
+                    StatusCode = VerificationStatus.Approved,
+                    FinancingInstitutionId = FinancingInstitutionId,
                     Description = "The National Student Financial Aid Scheme (NSFAS) is a South African government student financial aid scheme which provides financial aid to undergraduate students who need financial assistance to assist them to pay for the cost of their tertiary education.",
                     Image = "https://www.nsfas.org.za/content/images/logo.png",
-                    UpdatedBy = officerUserId
+
                 },
             ]);
         }
         internal static class BursaryOfficerData
         {
-            public static ReadOnlyCollection<BursaryOfficer> BursaryOfficerList { get; } = new ReadOnlyCollection<BursaryOfficer>(
+            public static ReadOnlyCollection<BursaryOfficer> BursaryOfficerList { get; } = new(
                 [
                     new BursaryOfficer
                     {
-                        Id = nsfasHomeBursaryOfficerId,
-                        OfficerId = officerUserId,
-                        BursaryId = nsfasBursaryId
+                        Id = NsfasHomeBursaryOfficerId,
+                        OfficerId = OfficerUserId,
+                        BursaryId = NsfasBursaryId
                     }
                 ]);
         }
         internal static class FeatureData
         {
-            public const string readWriteDeleteAction = "R-W-D";
-            public const string readWriteAction = "R-W";
-            public const string readDeleteAction = "R-D";
-            public const string readAction = "R";
+            public const string ReadWriteDeleteAction = "R-W-D";
+            public const string ReadWriteAction = "R-W";
+            public const string ReadDeleteAction = "R-D";
+            public const string ReadAction = "R";
 
-            public const string superAdminFeature = "all";
-            public const string userFeature = "user";
+            public const string SuperAdminFeature = "all";
+            public const string UserFeature = "user";
             public const string BursaryFeature = "Bursary";
-            public const string allowanceFeature = "allowance";
-            public const string residencyFeature = "residency";
+            public const string AllowanceFeature = "allowance";
+            public const string ResidencyFeature = "residency";
 
-            public static ReadOnlyCollection<Feature> FeatureList { get; } = new ReadOnlyCollection<Feature>(
+            public static ReadOnlyCollection<Feature> FeatureList { get; } = new(
             [
                 new Feature
                 {
-                    Id = superAdminFeatureId,
-                    Name = superAdminFeature,
+                    Id = SuperAdminFeatureId,
+                    Name = SuperAdminFeature,
                     IsActive = true,
-                    Access = readWriteDeleteAction
+                    Access = ReadWriteDeleteAction
                 },
                 new Feature
                 {
-                    Id = userFeatureId,
-                    Name = userFeature,
+                    Id = UserFeatureId,
+                    Name = UserFeature,
                     IsActive = true,
-                    Access = readWriteDeleteAction
+                    Access = ReadWriteDeleteAction
                 },
                 new Feature
                 {
                     Id = BursaryFeatureId,
                     Name = BursaryFeature,
                     IsActive = true,
-                    Access = readWriteDeleteAction
+                    Access = ReadWriteDeleteAction
                 },
                 new Feature
                 {
-                    Id = allowanceFeatureId,
-                    Name = allowanceFeature,
+                    Id = AllowanceFeatureId,
+                    Name = AllowanceFeature,
                     IsActive = true,
-                    Access = readWriteDeleteAction
+                    Access = ReadWriteDeleteAction
                 },
                 new Feature
                 {
-                    Id = residencyFeatureId,
-                    Name = residencyFeature,
+                    Id = ResidencyFeatureId,
+                    Name = ResidencyFeature,
                     IsActive = true,
-                    Access = readWriteDeleteAction
+                    Access = ReadWriteDeleteAction
                 }
             ]);
         }
         internal static class FinancingInstitutionData
         {
-            public static ReadOnlyCollection<FinancingInstitution> FinancingInstitutionList { get; } = new ReadOnlyCollection<FinancingInstitution>(
+            public static ReadOnlyCollection<FinancingInstitution> FinancingInstitutionList { get; } = new(
                                   [
                 new FinancingInstitution
                 {
-                    Id = financingInstitutionId,
+                    Id = FinancingInstitutionId,
                     Name = "National Student Financial Aid Scheme",
                     CreateTimestamp = DateTime.ParseExact("2024-01-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     UpdatedTimestamp = DateTime.ParseExact("2024-02-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     Description = "The National Student Financial Aid Scheme (NSFAS) is a South African government student financial aid scheme which provides financial aid to undergraduate students who need financial assistance to assist them to pay for the cost of their tertiary education.",
                     Image = "https://www.nsfas.org.za/content/images/logo.png",
-                    UpdatedBy = officerUserId,
-                    Bursaries = BursaryData.BursaryList
+
+                    Category = InstitutionCategory.Government
                 },
             ]);
         }
         internal static class InstitutionData
         {
-            public static ReadOnlyCollection<Institution> InstitutionList { get; } = new ReadOnlyCollection<Institution>(
+            public static ReadOnlyCollection<Institution> InstitutionList { get; } = new(
             [
                 new Institution
                 {
-                    Id = institutionId,
+                    Id = InstitutionId,
                     Name = "Univerity of Stellenbosch",
                     CreateTimestamp = DateTime.ParseExact("2024-01-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     UpdatedTimestamp = DateTime.ParseExact("2024-02-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
@@ -316,61 +323,58 @@ namespace bursaDAL.Classes
                                   "Stellenbosch is jointly the oldest university in South Africa and the oldest extant university" +
                                   " in Sub-Saharan Africa alongside the University of Cape Town which received full university status on the same day in 1918.",
                     Image = "https://www.sun.ac.za/english/corporate-identity/PublishingImages/Downloads/Su%20Logo/US%20korporatiewe%20logo%20stack%20vertikaal_CMYK.jpg",
-                    UpdatedById = officerUserId
+
                 }
             ]);
         }
-        internal static class PaymentData {
-            public static ReadOnlyCollection<Payment> PaymentList { get; } = new ReadOnlyCollection<Payment>(
+        internal static class PaymentData
+        {
+            public static ReadOnlyCollection<Payment> PaymentList { get; } = new(
                 [
                     new Payment
                     {
-                        Id = paymentId,
-                        AllowanceId = travelAllowanceId,
-                        PaymentTypeId = travelAllowanceId,
-                        PocketId = nsfasStudentPocketId,
-                        PaymentMadeById = officerUserId,
+                        Id = PaymentId,
+                        PaymentTypeId = TravelAllowanceId,
+                        PocketId = NsfasStudentPocketId,
+                        PaymentOfficerId = OfficerUserId,
                         Amount = 1200.00m,
                         PaymentStatus = PaymentStatusCode.Paid,
                         PaymentTimestamp = DateTime.ParseExact("2024-05-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
-                        BeneficiaryId = studentUserId,
+                        BeneficiaryId = StudentUserId,
                         NumberOfPeriodPaid = 1,
                         PaymentDescription = "Travel Allowance Payment",
                         CreateTimestamp = DateTime.ParseExact("2024-05-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                         UpdatedTimestamp = DateTime.ParseExact("2024-05-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture)
                     }
-                ]);  
+            ]);
         }
         internal static class PocketData
         {
-            public static ReadOnlyCollection<Pocket> PocketList { get; } = new ReadOnlyCollection<Pocket>(
-                           [
+            public static ReadOnlyCollection<Pocket> PocketList { get; } = new(
+            [
                 new Pocket
                 {
-                    Id = nsfasStudentPocketId,
+                    Id = NsfasStudentPocketId,
                     Name = "Student - [Residence] Pocket",
                     IsActive = true,
-                    BeneficiaryId = studentUserId,
-                    ResidenceId = ResidenceId.NewResidenceId(),
-                    Bursaries = BursaryData.BursaryList
+                    BeneficiaryId = StudentUserId,
+                    LivingArrangement = LivingArrangement.PrivateResidence
                 }
             ]);
         }
         internal static class ResidenceData
         {
-            private static readonly ResidenceId residenceId = ResidenceId.ParseResidenceId("f4e13f228fc44dc8a598ccc6c8b3377c");
-            public static ReadOnlyCollection<Residence> ResidenceList { get; } = new ReadOnlyCollection<Residence>(
+            public static ReadOnlyCollection<Residence> ResidenceList { get; } = new(
             [
                 new Residence
                 {
-                    Id = residenceId,
-                    UserId = studentUserId,
-                    UpdatedBy = officerUserId,
-                    LivingArrangment = LivingArrangment.PrivateResidence,
+                    Id = ResidenceId,
+                    ResidentId = StudentUserId,
+                    LivingArrangement = LivingArrangement.PrivateResidence,
                     TotalCost = 45000.00m,
                     LeaseUrl = new Uri("https://drive.google.com/file/d/1g8Q-_eWb9o9n02Tgo2dYlyrnZKsoRBiT/view?usp=drive_link"),
                     Address = "4 Beech Close, Macassar, Cape Town, 7130",
-                    ResidenceVarificationStatus = VarificationStatus.Approved,
+                    ResidenceVerificationStatus = VerificationStatus.Approved,
                     EndTimestamp = DateTime.ParseExact("2024-12-16 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     StartTimestamp = DateTime.ParseExact("2024-01-01 00:00:00", "yyyy-MM-dd hh:mm:ss",CultureInfo.CurrentCulture),
                     IsAccredited = true,
@@ -385,139 +389,47 @@ namespace bursaDAL.Classes
         }
         internal static class RoleData
         {
-            public const string superAdminRole = "SuperAdmin";
-            public const string adminRole = "Admin";
-            public const string officerRole = "Officer";
-            public const string studentRole = "Student";
+            public const string SuperAdminRole = "SuperAdmin";
+            public const string AdminRole = "Admin";
+            public const string OfficerRole = "Officer";
+            public const string StudentRole = "Student";
 
-            public static ReadOnlyCollection<Role> RoleList { get; } = new ReadOnlyCollection<Role>(new[]
-               {
+            public static ReadOnlyCollection<Role> RoleList { get; } = new([
+
                 new Role
                 {
-                    Id = superAdminRoleId,
-                    Name = superAdminRole,
-                    Features = [
-                        new Feature
-                        {
-                            Id = superAdminFeatureId,
-                            Name = FeatureData.superAdminFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        }
-                    ]
+                    Id = SuperAdminRoleId,
+                    Name = SuperAdminRole,
+                    Description = SuperAdminRole
                 },
                 new Role
                 {
-                    Id = adminRoleId,
-                    Name = adminRole,
-                    Features =
-                    [
-                        new()
-                        {
-                            Id = userFeatureId,
-                            Name = FeatureData.userFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new()
-                        {
-                            Id = BursaryFeatureId,
-                            Name = FeatureData.BursaryFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new() {
-                            Id = allowanceFeatureId,
-                            Name = FeatureData.allowanceFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new() {
-                            Id = residencyFeatureId,
-                            Name = FeatureData.residencyFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        }
-                    ]
+                    Id = AdminRoleId,
+                    Name = AdminRole,
+                    Description = AdminRole
                 },
                 new Role
                 {
-                    Id = officerRoleId,
-                    Name = officerRole,
-                    Features =
-                    [
-                        new()
-                        {
-                            Id = userFeatureId,
-                            Name = FeatureData.userFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new()
-                        {
-                            Id = BursaryFeatureId,
-                            Name = FeatureData.BursaryFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new() {
-                            Id = allowanceFeatureId,
-                            Name = FeatureData.allowanceFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        },
-                        new() {
-                            Id = residencyFeatureId,
-                            Name = FeatureData.residencyFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        }
-                    ]
+                    Id = OfficerRoleId,
+                    Name = OfficerRole,
+                    Description = OfficerRole
                 },
                 new Role
                 {
-                    Id = studentRoleId,
-                    Name = studentRole,
-                    Features =
-                    [
-                        new()
-                        {
-                            Id = userFeatureId,
-                            Name = FeatureData.userFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteAction
-                        },
-                        new()
-                        {
-                            Id = BursaryFeatureId,
-                            Name = FeatureData.BursaryFeature,
-                            IsActive = true,
-                            Access = FeatureData.readAction
-                        },
-                        new() {
-                            Id = allowanceFeatureId,
-                            Name = FeatureData.allowanceFeature,
-                            IsActive = true,
-                            Access = FeatureData.readAction
-                        },
-                        new() {
-                            Id = residencyFeatureId,
-                            Name = FeatureData.residencyFeature,
-                            IsActive = true,
-                            Access = FeatureData.readWriteDeleteAction
-                        }
-                    ]
+                    Id = StudentRoleId,
+                    Name = StudentRole,
+                    Description = StudentRole
                 }
-            });
+            ]);
         }
         internal static class UserData
         {
-            public static ReadOnlyCollection<User> UserList { get; } = new ReadOnlyCollection<User>(new[]
-            {
+            public static ReadOnlyCollection<User> UserList { get; } = new(
+            [
                 new User
                 {
-                    Id = superAdminUserId,
-                    RoleId = superAdminRoleId,
+                    Id = SuperAdminUserId,
+                    RoleId = SuperAdminRoleId,
                     IsActive=true,
                     IdNumber ="9008122255089",
                     Name = "Super Admin",
@@ -529,8 +441,8 @@ namespace bursaDAL.Classes
                 },
                 new User
                 {
-                    Id = adminUserId,
-                    RoleId = adminRoleId,
+                    Id = AdminUserId,
+                    RoleId = AdminRoleId,
                     IsActive=true,
                     IdNumber ="9202018795089",
                     Name = "Admin",
@@ -542,10 +454,10 @@ namespace bursaDAL.Classes
                 },
                 new User
                 {
-                    Id = officerUserId,
-                    RoleId = officerRoleId,
+                    Id = OfficerUserId,
+                    RoleId = OfficerRoleId,
                     IsActive = true,
-                    SaltIDNumber = "102",
+                    SaltIdNumber = "102",
                     IdNumber ="2106098795089",
                     Name = "Officer",
                     Surname = "Officer",
@@ -556,10 +468,10 @@ namespace bursaDAL.Classes
                 },
                 new User
                 {
-                    Id = studentUserId,
-                    RoleId = studentRoleId,
+                    Id = StudentUserId,
+                    RoleId = StudentRoleId,
                     IsActive = true,
-                    SaltIDNumber = "102",
+                    SaltIdNumber = "102",
                     IdNumber ="2106098795089",
                     Name = "Student",
                     Surname = "Student",
@@ -568,7 +480,7 @@ namespace bursaDAL.Classes
                     Email = "mrbtmkhabela+3@gmail.com",
                     PersonnelId = "100000004"
                 },
-            });
+            ]);
         }
     }
 }

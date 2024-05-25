@@ -15,12 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{17CFA053-8276-402C-8873-A07490C09C0A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bursa.Infrastructure", "Bursa.Infrastructure", "{4E4975D7-7D31-4EEB-8128-2866F79B8AC1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{73AF4F82-C48D-49A2-A98C-0F4A3722711A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Respositories", "Respositories", "{7DA0C3EB-00EA-48BD-880D-7051DD4D7551}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{73AF4F82-C48D-49A2-A98C-0F4A3722711A} = {4E4975D7-7D31-4EEB-8128-2866F79B8AC1}
-		{7DA0C3EB-00EA-48BD-880D-7051DD4D7551} = {73AF4F82-C48D-49A2-A98C-0F4A3722711A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7446403F-1C14-4E32-916C-739EE853D063}

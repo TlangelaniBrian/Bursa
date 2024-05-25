@@ -5,27 +5,31 @@ using static bursaDAL.Classes.Constants;
 
 namespace bursaDAL.Configurations
 {
-        public class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
+    public class InstitutionConfiguration(ModelBuilder modelBuilder) : IEntityTypeConfiguration<Institution>
+    {
+        private readonly EntityTypeBuilder<Institution> _builder = modelBuilder.Entity<Institution>();
+
+        public void Setup()
         {
-            public void Configure(EntityTypeBuilder<Institution> builder)
-            {
-                ConfigureInstitutionKeys(builder);
-            }
-
-            private void ConfigureInstitutionKeys(EntityTypeBuilder<Institution> builder)
-            {
-                builder.ToTable("Institution");
-                builder.HasKey(x => x.Id)
-                       .IsClustered(false);
-
-                builder.Property(x => x.Id)
-                       .ValueGeneratedNever()
-                       .HasConversion(id => id.Value, 
-                                      value => InstitutionId.CreateInstitutionId(value));
-
-            }
-
-          
+            Configure(_builder);
         }
-    
+
+        public void Configure(EntityTypeBuilder<Institution> builder)
+        {
+            builder.HasKey(x => x.Id)
+                   .IsClustered(false);
+
+            builder.Property(x => x.Id)
+                .HasConversion(
+                    v => v.Value,
+                    v => new InstitutionId(v));
+
+            //Seed Institution
+            foreach (var institution in InstitutionData.InstitutionList)
+            {
+                builder.HasData(institution);
+            }
+        }
+    }
+
 }

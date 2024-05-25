@@ -9,7 +9,7 @@ namespace bursaAPI.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private const string _suffixSourceName = "bursa";
+        private const string SuffixSourceName = "bursa";
 
         private static readonly string[] Summaries =
         [
@@ -26,7 +26,7 @@ namespace bursaAPI.Controllers
         public async Task<WrapperResponse> Get()
         {
             var message = string.Empty;
-            var source = $"{_suffixSourceName}-weather";
+            var source = $"{SuffixSourceName}-weather";
 
             var results = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

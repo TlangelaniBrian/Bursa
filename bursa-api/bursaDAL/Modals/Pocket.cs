@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using static bursaDAL.Classes.Constants;
 
 namespace bursaDAL.Modals
 {
@@ -11,8 +12,9 @@ namespace bursaDAL.Modals
     }
     public class Pocket
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public PocketId Id { get; set; } = PocketId.Empty;
+        [MaxLength(300)]
         public string Name { get; set; } = string.Empty;
         public bool IsActive { get; set; }
 
@@ -20,12 +22,9 @@ namespace bursaDAL.Modals
         public UserId BeneficiaryId { get; set; }
         [ForeignKey("BeneficiaryId")]
         public virtual User? Beneficiary { get; set; }
-
-        [Display(Name = "Residence")]
-        public ResidenceId ResidenceId { get; set; }
-        [ForeignKey("ResidenceId")]
-        public virtual Residence? Residence { get; set; }
-        public virtual ICollection<Bursary> Bursaries { get; set; } = [];
+        public LivingArrangement LivingArrangement { get; set; }
+        public DateTime CreateTimestamp { get; set; } = DateTime.Now;
+        public DateTime UpdateTimestamp { get; set; } = DateTime.Now;
         public virtual ICollection<Allowance> Allowances { get; set; } = [];
     }
 }
