@@ -22,7 +22,7 @@ namespace bursaAPI.Middleware
             return new WrapperResponse(source, httpStatusCode, message);
         }
 
-        internal static WrapperResponse CreateSuccessResponse(string source, object result, string? message = null,
+        internal static WrapperResponse CreateSuccessResponse(string source, object? result, string? message = null,
             HttpStatusCode httpStatusCode = HttpStatusCode.OK)
         {
             return new WrapperResponse(source, httpStatusCode, message, result);

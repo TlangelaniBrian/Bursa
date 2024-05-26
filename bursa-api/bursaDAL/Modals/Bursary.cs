@@ -18,7 +18,7 @@ namespace bursaDAL.Modals
         public BursaryType Type { get; set; }
         public VerificationStatus StatusCode { get; set; }
 
-        [MaxLength(2000)] 
+        [MaxLength(2000)]
         public string? Notes { get; set; } = string.Empty;
 
         [MaxLength(300)]

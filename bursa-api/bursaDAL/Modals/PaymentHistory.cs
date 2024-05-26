@@ -22,7 +22,7 @@ namespace bursaDAL.Modals
         [Display(Name = "PaymentOfficer")]
         [MaxLength(300)]
         public string? OfficerPersonnelId { get; set; }
-        
+
         public AllowanceId AllowanceId { get; set; } = AllowanceId.Empty;
         [ForeignKey("AllowanceId")]
         public virtual Allowance? Allowance { get; set; }

@@ -1,4 +1,5 @@
-﻿using bursaAPI.Modals;
+﻿using bursaAPI.Application.Profile;
+using bursaAPI.Modals;
 using bursaDAL.Modals;
 using System.Collections.ObjectModel;
 
@@ -20,7 +21,7 @@ namespace bursaAPI.Repository
         #endregion
 
         #region------ Add Methods ------
-        public Task<int> AddStudent(Student student);
+        public Task<int> AddStudentUser(User student);
         #endregion
 
         #region------ Update Methods ------

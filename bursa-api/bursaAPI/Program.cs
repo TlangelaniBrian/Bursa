@@ -2,6 +2,7 @@ using bursaAPI.Repository;
 using bursaDAL;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,13 @@ builder.Services.AddDbContextPool<BursaContext>(
 
 builder.Logging.ClearProviders();
 builder.Host.UseSerilog((context, loggerConfig) => loggerConfig.ReadFrom.Configuration(context.Configuration));
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+
+    });
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v0.0.1", new() { Title = "bursa", Version = "0.0.1" });

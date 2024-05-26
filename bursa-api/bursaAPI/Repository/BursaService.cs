@@ -1,14 +1,19 @@
-﻿using bursaAPI.Modals;
+﻿using bursaAPI.Application.Profile;
+using bursaAPI.Modals;
+using bursaDAL;
 using bursaDAL.Modals;
 using System.Collections.ObjectModel;
 
 namespace bursaAPI.Repository
 {
-    public class BursaService : IBursaService
+    public class BursaService(BursaContext bursaContext) : IBursaService
     {
-        public Task<int> AddStudent(Student student)
+        private BursaContext BursaContext { get; } = bursaContext;
+
+        public Task<int> AddStudentUser(User student)
         {
-            throw new NotImplementedException();
+            BursaContext.Add(student);
+            return BursaContext.SaveChangesAsync();
         }
 
         public Task<int> DeleteBursaries(Collection<BursaryId> bursaryIds)

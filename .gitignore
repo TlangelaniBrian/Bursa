@@ -58,3 +58,5 @@ logs
 !.env.example
 bursa-api/**/obj/
 bursa-api/**/bin/
+/bursaTest/obj/
+/bursaTest/bin/
