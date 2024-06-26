@@ -7,12 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bursaAPI", "bursaAPI\bursaA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bursaDAL", "bursaDAL\bursaDAL.csproj", "{A57F6D51-EF47-4E63-A658-681C555314A3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB7BC4C3-ADBC-45D8-9CB8-C0CF4C084205}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		Directory.build.props = Directory.build.props
-	EndProjectSection
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{17CFA053-8276-402C-8873-A07490C09C0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bursaTest", "..\bursaTest\bursaTest.csproj", "{10B4C783-8711-46D4-9854-7ACA910FCE13}"

@@ -1,5 +1,4 @@
 ﻿using bursaAPI.Middleware;
-using bursaAPI.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

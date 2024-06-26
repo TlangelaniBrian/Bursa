@@ -1,14 +1,16 @@
 ﻿using bursaAPI.Middleware;
-using bursaAPI.Repository;
+using bursaDAL;
+using bursaDAL.Classes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 
 namespace bursaAPI.Application.Admin
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdminController(IBursaService dbService) : ControllerBase
+    public class AdminController(BursaContext bursaContex) : ControllerBase
     {
         private const string SuffixSourceName = "admin";
 
@@ -24,13 +26,25 @@ namespace bursaAPI.Application.Admin
                 return Task.FromResult(ResponseCreation.CreateErrorResponse(source, message));
             }
 
-            var createUserSuccessfully = new SystemUser(dbService).CreateNewUser(user);
-            if (createUserSuccessfully > 0)
-            {
-                return Task.FromResult(ResponseCreation.CreateErrorResponse(source, message));
-            }
-
-            return Task.FromResult(ResponseCreation.CreateSuccessResponse(source, null, message, HttpStatusCode.Accepted));
+            user.Name = "Brian";
+            return Task.FromResult(ResponseCreation.CreateSuccessResponse(source, user, message, HttpStatusCode.Accepted));
         }
+
+        [AllowAnonymous]
+        [HttpGet("get-users")]
+        public Task<WrapperResponse> GetUsers([FromBody] string userId)
+        {
+            var source = $"{SuffixSourceName}-{nameof(GetUsers)}";
+            var message = string.Empty;
+
+            var students = bursaContex.Users
+                .Include(r => r.Role)
+                .Where(s => s.RoleId == Constants.StudentRoleId)
+                .AsNoTrackingWithIdentityResolution()
+                .ToList();
+
+            return Task.FromResult(ResponseCreation.CreateSuccessResponse(source, students, message, HttpStatusCode.Accepted));
+        }
+
     }
 }

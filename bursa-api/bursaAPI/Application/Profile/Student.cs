@@ -1,9 +1,11 @@
-﻿namespace bursaAPI.Application.Profile
+﻿using bursaDAL.Modals;
+
+namespace bursaAPI.Application.Profile
 {
 
     public class Student
     {
-        public int Id { get; set; }
+        public UserId Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;

@@ -6,41 +6,41 @@ namespace bursaDAL.Classes
 {
     public static class Constants
     {
-        private static readonly AcademicYearId JanuaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("b24b536901c247c8999c38d861721bdd");
-        private static readonly AcademicYearId FebruaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("13dce65be2a54abeb62c7799ba88402e");
+        public static readonly AcademicYearId JanuaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("b24b536901c247c8999c38d861721bdd");
+        public static readonly AcademicYearId FebruaryToDecemberYearId = AcademicYearId.ParseAcademicYearId("13dce65be2a54abeb62c7799ba88402e");
 
-        private static readonly AllowanceId TravelAllowanceId = AllowanceId.ParseAllowanceId("2aa8bf15e2c4499c90977c5f196f2641");
-        private static readonly AllowanceId FoodAllowanceId = AllowanceId.ParseAllowanceId("c803c4d5abe745ef83f5235cea13deb5");
-        private static readonly AllowanceId BookAllowanceId = AllowanceId.ParseAllowanceId("dc3d722aa9fb42d18b6b38052fb4db53");
-        private static readonly AllowanceId ResidenceAllowanceId = AllowanceId.ParseAllowanceId("39a725c3160547f98554e376da69e1b3");
+        public static readonly AllowanceId TravelAllowanceId = AllowanceId.ParseAllowanceId("2aa8bf15e2c4499c90977c5f196f2641");
+        public static readonly AllowanceId FoodAllowanceId = AllowanceId.ParseAllowanceId("c803c4d5abe745ef83f5235cea13deb5");
+        public static readonly AllowanceId BookAllowanceId = AllowanceId.ParseAllowanceId("dc3d722aa9fb42d18b6b38052fb4db53");
+        public static readonly AllowanceId ResidenceAllowanceId = AllowanceId.ParseAllowanceId("39a725c3160547f98554e376da69e1b3");
 
-        private static readonly AllowanceTypeId TravelAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("a5aa0a8e6988486a9975ca16d99b4149");
-        private static readonly AllowanceTypeId FoodAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("c445390fe8294d569bd7d51de39dd718");
-        private static readonly AllowanceTypeId BookAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("22180315f1074737983a99f8eb2a48a9");
-        private static readonly AllowanceTypeId ResidenceAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("9ab195d303734284a341f094ad2bff94");
+        public static readonly AllowanceTypeId TravelAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("a5aa0a8e6988486a9975ca16d99b4149");
+        public static readonly AllowanceTypeId FoodAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("c445390fe8294d569bd7d51de39dd718");
+        public static readonly AllowanceTypeId BookAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("22180315f1074737983a99f8eb2a48a9");
+        public static readonly AllowanceTypeId ResidenceAllowanceTypeId = AllowanceTypeId.ParseAllowanceTypeId("9ab195d303734284a341f094ad2bff94");
 
-        private static readonly BursaryId NsfasBursaryId = BursaryId.ParseBursaryId("b1da32d9858b4e429470d04cab92940f");
-        private static readonly BursaryOfficerId NsfasHomeBursaryOfficerId = BursaryOfficerId.ParseBursaryOfficerId("29d86a7df1934132aaa7ff9a2780da7a");
-        private static readonly PocketId NsfasStudentPocketId = PocketId.ParsePocketId("6909a8f758d344308cedb57628c46235");
-        private static readonly PaymentId PaymentId = PaymentId.ParsePaymentId("be049cdd8eba40b3a465dadd1fc70bf6");
-        private static readonly InstitutionId InstitutionId = InstitutionId.ParseInstitutionId("0d018d4b9b97437d8f33f47ebbdd0aa3");
-        private static readonly FinancingInstitutionId FinancingInstitutionId = FinancingInstitutionId.ParseFinancingInstitutionId("4b53bd2d0e834117927403197a7f2473");
-        private static readonly ResidenceId ResidenceId = ResidenceId.ParseResidenceId("f4e13f228fc44dc8a598ccc6c8b3377c");
-        private static readonly FeatureId SuperAdminFeatureId = FeatureId.ParseFeatureId("8d22686a2b92481a9e21064211b7c949");
-        private static readonly FeatureId UserFeatureId = FeatureId.ParseFeatureId("211eb55a13bf4f848f8ebcbf9ce6564a");
-        private static readonly FeatureId BursaryFeatureId = FeatureId.ParseFeatureId("3d27613b37ac49e3b143dbe193975974");
-        private static readonly FeatureId AllowanceFeatureId = FeatureId.ParseFeatureId("65fa4c90600a4cb6996160fe359c71b4");
-        private static readonly FeatureId ResidencyFeatureId = FeatureId.ParseFeatureId("6b7eb258cdf140c7a4577fd93abcdd56");
+        public static readonly BursaryId NsfasBursaryId = BursaryId.ParseBursaryId("b1da32d9858b4e429470d04cab92940f");
+        public static readonly BursaryOfficerId NsfasHomeBursaryOfficerId = BursaryOfficerId.ParseBursaryOfficerId("29d86a7df1934132aaa7ff9a2780da7a");
+        public static readonly PocketId NsfasStudentPocketId = PocketId.ParsePocketId("6909a8f758d344308cedb57628c46235");
+        public static readonly PaymentId PaymentId = PaymentId.ParsePaymentId("be049cdd8eba40b3a465dadd1fc70bf6");
+        public static readonly InstitutionId InstitutionId = InstitutionId.ParseInstitutionId("0d018d4b9b97437d8f33f47ebbdd0aa3");
+        public static readonly FinancingInstitutionId FinancingInstitutionId = FinancingInstitutionId.ParseFinancingInstitutionId("4b53bd2d0e834117927403197a7f2473");
+        public static readonly ResidenceId ResidenceId = ResidenceId.ParseResidenceId("f4e13f228fc44dc8a598ccc6c8b3377c");
+        public static readonly FeatureId SuperAdminFeatureId = FeatureId.ParseFeatureId("8d22686a2b92481a9e21064211b7c949");
+        public static readonly FeatureId UserFeatureId = FeatureId.ParseFeatureId("211eb55a13bf4f848f8ebcbf9ce6564a");
+        public static readonly FeatureId BursaryFeatureId = FeatureId.ParseFeatureId("3d27613b37ac49e3b143dbe193975974");
+        public static readonly FeatureId AllowanceFeatureId = FeatureId.ParseFeatureId("65fa4c90600a4cb6996160fe359c71b4");
+        public static readonly FeatureId ResidencyFeatureId = FeatureId.ParseFeatureId("6b7eb258cdf140c7a4577fd93abcdd56");
 
-        private static readonly UserId SuperAdminUserId = UserId.ParseUserId("5d76cbcfb3de426db105faa16b8536a4");
-        private static readonly UserId AdminUserId = UserId.ParseUserId("e9446c7d8328490d8a1f3c180bb95cfd");
-        private static readonly UserId OfficerUserId = UserId.ParseUserId("35996b95cce14bf088c8a26a99032e30");
-        private static readonly UserId StudentUserId = UserId.ParseUserId("122716c8522b4d6eaf9204dd7208b862");
+        public static readonly UserId SuperAdminUserId = UserId.ParseUserId("5d76cbcfb3de426db105faa16b8536a4");
+        public static readonly UserId AdminUserId = UserId.ParseUserId("e9446c7d8328490d8a1f3c180bb95cfd");
+        public static readonly UserId OfficerUserId = UserId.ParseUserId("35996b95cce14bf088c8a26a99032e30");
+        public static readonly UserId StudentUserId = UserId.ParseUserId("122716c8522b4d6eaf9204dd7208b862");
 
-        private static readonly RoleId SuperAdminRoleId = RoleId.ParseRoleId("dd7ee8cf9075403a82dd67100a57115e");
-        private static readonly RoleId AdminRoleId = RoleId.ParseRoleId("7a3a9989fa574186ae1efeb53d641d17");
-        private static readonly RoleId OfficerRoleId = RoleId.ParseRoleId("a8b05ec09a824b7a9d419829b16e2cf0");
-        private static readonly RoleId StudentRoleId = RoleId.ParseRoleId("6620edbed4da4b5280689fc35abd0fee");
+        public static readonly RoleId SuperAdminRoleId = RoleId.ParseRoleId("dd7ee8cf9075403a82dd67100a57115e");
+        public static readonly RoleId AdminRoleId = RoleId.ParseRoleId("7a3a9989fa574186ae1efeb53d641d17");
+        public static readonly RoleId OfficerRoleId = RoleId.ParseRoleId("a8b05ec09a824b7a9d419829b16e2cf0");
+        public static readonly RoleId StudentRoleId = RoleId.ParseRoleId("6620edbed4da4b5280689fc35abd0fee");
 
         public enum VerificationStatus
         {

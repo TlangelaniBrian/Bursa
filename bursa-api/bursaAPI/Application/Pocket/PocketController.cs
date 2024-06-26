@@ -1,7 +1,7 @@
-﻿using System.Collections.ObjectModel;
-using bursaAPI.Middleware;
+﻿using bursaAPI.Middleware;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.ObjectModel;
 
 namespace bursaAPI.Application.Pocket
 {

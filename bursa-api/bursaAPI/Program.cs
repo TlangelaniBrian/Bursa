@@ -1,4 +1,3 @@
-using bursaAPI.Repository;
 using bursaDAL;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -18,14 +17,13 @@ builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-
     });
 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v0.0.1", new() { Title = "bursa", Version = "0.0.1" });
 });
-builder.Services.AddScoped<IBursaService, BursaService>();
+
 builder.Services.AddEndpointsApiExplorer();
 
 
